@@ -5,6 +5,4 @@ package com.OpenClose;
  */
 public interface AbstractChart {
     void display();
-    // test
-    void display2();
 }
