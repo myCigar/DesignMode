@@ -17,7 +17,9 @@ class LoadBalancer {
     //公有静态成员方法，返回唯一实例
     public static LoadBalancer getLoadBalancer() {
         if (instance == null) {
-            instance = new LoadBalancer();
+            synchronized(LoadBalancer.class) {
+                instance = new LoadBalancer();
+            }
         }
         return instance;
     }
