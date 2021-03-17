@@ -1,5 +1,7 @@
 package com.ObserverPattern;
 
+
+
 public class ConcreteSubject extends Subject {
     @Override
     public void notifyUpdate() {
