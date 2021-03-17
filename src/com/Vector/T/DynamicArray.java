@@ -12,7 +12,6 @@ public class DynamicArray<E> {
     }
 
     private void ensureCapacity(int minCapacity) {
-        String
         int oldCapacity = elementData.length;
         if (oldCapacity >= minCapacity) {
             return;
